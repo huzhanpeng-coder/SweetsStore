@@ -6,6 +6,7 @@
 
 
 body {
+    background-color: #fffdd0;
 	padding-top: 50px;
 	color: #959595;
 	}
@@ -46,8 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-custom {
-	height: 120px;
-    
+	
 	background-color: #fffdd0;
     
 
