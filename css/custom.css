@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Griffy&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Griffy&family=Pacifico&family=STIX+Two+Text&display=swap');
 
 
 body {
 	padding-top: 50px;
 	color: #959595;
 	}
-	
+
+.rectangle {
+    position: absolute;
+    display: block;
+    height: 500px;
+    width: 500px;
+    background-color: #555;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: black;
 	}
@@ -36,8 +46,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-custom {
-	height: 150px;
-	background-color: #F2E863;
+	height: 120px;
+    
+	background-color: #fffdd0;
     
 
   }
@@ -49,12 +60,12 @@ h1, h2, h3, h4, h5, h6 {
 }  
 
 .nav-custom {
-	padding-left: 150px;
-	padding-top: 10px;
+	padding-left: 10px;
+	padding-top: 20px;
 }
 
 .myFooter{
-    background-color:#F2E863;
+    background-color:#fffdd0;
     padding-left: 150px;
     padding-right: 150px;
     padding-bottom: 50px;
@@ -64,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 .myFooter-container{
     background-image: url("../img/littleFooter.jpeg");
     border-style: solid;
-    border-color: black;
+    border-color: brown;
     border-radius: 25px;
     padding-left: 50px;
     padding-right: 50px;
@@ -82,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container{
-    background-color: #F2E863;
+    background-color: #fffdd0;
     padding-right: 0px;
 }
 
@@ -91,16 +102,60 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 40px;
 }
 
+.title2{
+    font-size: 50px;
+}
+
+.title3{
+    font-size: 30px;
+}
+
 .text-font{
     font-family: 'Pacifico', cursive;
 }
 
 .myContainer {
+    background-color: #fffdd0;
 	position: relative;
 	text-align: center;
-	color: white;
+	color: brown;
   }
-  
+
+.myContainer2 {
+    background-color: #fffdd0;
+    font-family: 'Griffy', cursive, 'STIX Two Text', serif;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+	position: relative;
+	text-align: center;
+	color: brown;
+  }
+
+  .myContainer2 .content2{
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .myContainer2 .content {
+    border-left: groove;
+    border-right: solid;
+    border-bottom: solid;
+    border-color: brown;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'STIX Two Text', serif;
+    font-size:x-large;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 .hero-bottom-right {
 	font-family: 'Pacifico', cursive;
 	font-size: 20px;
@@ -164,4 +219,62 @@ h1, h2, h3, h4, h5, h6 {
 .no-padding [class^="col-"] {
     padding-left: 0;
     padding-right: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+
+.containers {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn1 {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid brown;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn1:hover {
+  transition: 1s ease-in-out;
+  background: brown;
+  color:white;
+}
+
+.btn1:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn1 span {
+  font-size: 18px;
+  font-weight: 100;
 }
