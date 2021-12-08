@@ -101,6 +101,21 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Abril Fatface', cursive;
 	font-size: 40px;
 }
+.paragraph{
+  font-size: 15px;
+}
+
+.logo2{
+  display: inline;
+  max-width: 10%;
+  height: auto;
+}
+
+.logo{
+  display: block;
+  max-width: 15%;
+  height: auto;
+}
 
 .title2{
     font-size: 50px;
